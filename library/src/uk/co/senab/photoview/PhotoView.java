@@ -214,6 +214,10 @@ public class PhotoView extends ImageView implements IPhotoView {
         return mAttacher.getOnViewTapListener();
     }
 
+    public PhotoViewAttacher getPhotoViewAttacher() {
+        return mAttacher;
+    }
+
     @Override
     public void setScale(float scale) {
         mAttacher.setScale(scale);
